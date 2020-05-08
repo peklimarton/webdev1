@@ -1,0 +1,81 @@
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+body {
+    background-image: url(/img/binding_light_@2X.png);
+    background-repeat: repeat;
+    font-family: montserrat, helvetica, sans-serif;
+    margin: 30px;
+}
+
+
+.mycont, 
+.container-fluid,
+.container-fluid  {
+    background: snow;
+    padding: 16px;
+    padding-left: 16px;
+    padding-right: 0;
+    border-radius: 8px;
+    margin-top: 32px;
+
+}
+
+.formcol {
+    display: inline-block;
+}
+
+.container-fluid {
+    background-image: url(img/bg.jpg) ;
+}
+
+
+div#aboutme figure img {
+    width: 800px;
+    padding: 24px;
+}
+
+input, textarea {
+    display: block;
+    margin: 8px;
+}
+
+a.underlined {
+    text-decoration: underline;
+}
+a.underlined:visited {
+    text-decoration: underline;
+    color: lightseagreen;
+}
+
+.conbtn {
+    display: inline;
+    margin-top: 20px;
+}
+
+#img-fluid {
+  border-style: solid;
+  border-width: 5px;
+  border-color: black;
+}
+
+.footer {
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+
+div.card {
+    margin-top: 32px;
+}
+

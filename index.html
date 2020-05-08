@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="hu">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Pekli UI/UX - Kezdőlap</title>
+  </head>
+  <body>
+    <a href="#skiptomaincontent" class="sr-only">Ugrás a tartalomra</a>
+      <header class="container-fluid">
+        
+
+            <nav class="navbar navbar-expand-lg navbar-light d-print-none" style="background-color: snow;">
+              <a class="navbar-brand" href="#">Pekli UI/UX</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-item nav-link active" href="/">Főoldal <span class="sr-only">(current)</span></a>
+                  <a class="nav-item nav-link" href="works.html">Munkáim</a>
+                  <a class="nav-item nav-link" href="about.html">Rólam</a>
+                  <a class="nav-item nav-link" href="contact.html" tabindex="-1" aria-disabled="true">Kapcsolat</a>
+                </div>
+              </div>
+              <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                <label class="btn btn-secondary active">
+                  <input type="radio" name="options" id="option1" onclick="fontSize()" checked> Kis szöveg
+                </label>
+                <label class="btn btn-secondary">
+                  <input type="radio" name="options" id="option2" onclick="fontSize2()"> Normál szöveg
+                </label>
+                <label class="btn btn-secondary">
+                  <input type="radio" name="options" id="option3" onclick="fontSize3()"> Nagy Szöveg
+                </label>
+              </div>
+            </nav>
+
+      </header>
+    <h1 class="skiptomaincontent container mycont">Kezdőlap</h1>
+
+    <div class="container mycont" id="fontsiz">
+        <div class="row">
+          <div class="col-lg-8 mycol">
+            <video src="img/IMG_3676.webm" poster="img/intro_thumbnail.png" controls class="container d-print-none">
+            </video>
+            <aside>A videó szövege itt érhető el: <a href="transcript.html">Videó szövege</a></aside>
+          </div>
+          <div class="col-lg-4 mycol">
+            <h2>Kedves Látogató</h2>
+            <br>
+            <article id="fontsize" style="font-size: 1em;">Köszönöm hogy meglátogattad az oldalamat. A nevem Pekli Márton,
+            szabadúszó UX & UI designerként és termékmenedzserként dolgozom.
+            További információkért nézd meg a bemutatkozó videómat,
+            vagy nézd meg a Rólam aloldalt itt!
+            </article>
+            <br>
+            <aside>
+            Amennyiben ajánlatot szeretnél kérni, úgy kérlek látogass el
+            a <a href="contact.html">Kapcsolat</a> aloldalra.
+            </aside>
+          </div>
+        </div>
+    </div>
+
+      
+
+    <div class="container-md mycont">
+        <h2>Időpontok</h2>
+        <table>
+            <caption>
+                <details>
+                    <summary>Ügyfélfogadási időszak</summary>
+                    <p>Az a fenti táblázatban találhatja szabad időpontjaimat, napokra bontva.</p>
+                </details>
+            </caption>
+            <tr>
+                <th>Hétfő</th>
+                <th>Kedd</th>
+                <th>Szerda</th>
+                <th>Csütörtök</th>
+                <th>Péntek</th>
+            </tr>
+            <tr>
+                <td>08:00 - 16:00</td>
+                <td>08:00 - 16:00</td>
+                <td>08:00 - 16:00</td>
+                <td>08:00 - 16:00</td>
+                <td>08:00 - 16:00</td>
+            </tr>
+            <tr>
+                <td>Időpontfoglalás szükséges</td>
+                <td>Időpontfoglalás szükséges</td>
+                <td>Időpontfoglalás szükséges</td>
+                <td>Időpontfoglalás szükséges</td>
+                <td>Időpontfoglalás szükséges</td>
+            </tr>
+            
+        </table>
+    </div>
+
+    <footer class="container-fluid footer">
+        <p>copyright - peklimarton 2020</p>
+    </footer>
+
+    <script>
+         function fontSize() {
+            document.getElementById("fontsiz").style.fontSize = "0.8em";
+          }
+          function fontSize2() {
+            document.getElementById("fontsiz").style.fontSize = "1em";
+          }
+          function fontSize3() {
+            document.getElementById("fontsiz").style.fontSize = "1.5em";
+          }
+   </script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>

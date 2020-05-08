@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="hu">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Pekli UI/UX - Rólam</title>
+  </head>
+  <body>
+    <a href="#skiptomaincontent" class="sr-only">Ugrás a tartalomra</a>
+    <header class="container-fluid">
+      
+
+          <nav class="navbar navbar-expand-lg navbar-light d-print-none" style="background-color: snow;">
+            <a class="navbar-brand" href="#">Pekli UI/UX</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-item nav-link" href="/">Főoldal</a>
+                <a class="nav-item nav-link" href="works.html">Munkáim</a>
+                <a class="nav-item nav-link active" href="about.html">Rólam<span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="contact.html">Kapcsolat</a>
+              </div>
+            </div>
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+              <label class="btn btn-secondary active">
+                <input type="radio" name="options" id="option1" onclick="fontSize()" checked> Kis szöveg
+              </label>
+              <label class="btn btn-secondary">
+                <input type="radio" name="options" id="option2" onclick="fontSize2()"> Normál szöveg
+              </label>
+              <label class="btn btn-secondary">
+                <input type="radio" name="options" id="option3" onclick="fontSize3()"> Nagy Szöveg
+              </label>
+            </div>
+          </nav>
+
+    </header>
+    <h1 class="skiptomaincontent container mycont">Rólam</h1>
+  
+        <div class="container mycont" id="fontsizer">
+          <div class="row">
+              <div class="col-md-4 mycol">
+                  <figure>
+                      <img src="img/bemutatkozo_thumbnail.png" alt="Egy kép rólam, amin mosolygok" class="img-fluid">
+                      <figcaption>Egy kép rólam, miután végeztem egy nehéz projekttel</figcaption>
+                  </figure>
+                </div>
+            <div class="col-md-8 mycol">
+              <h2>Magamról röviden:</h2>
+              <p>Pekli Márton vagyok, 24 éves UX / UI designer. Jelenleg Budapesten dolgozom egyéni vállalkozóként, szoros együttműködésben Magyarország egyik meghatározó fejlesztő cégével, a Mindtech kft-vel.
+              Leggyakrabban telefonos applikációk felhasználói felületeinek tervezésével foglalkozom, de természetesen más webes és egyéb platformok kialakításán is szoktam dolgozni, hogy azok használata a lehető legkönnyebb és legélményszerűbb legyen. Ezek közül talán a két legkiemelkedőbb projektem a Holding13 illetve az ILR kft részére végzett munkám, melynek során teljes UX auditot végeztem, majd újraterveztem a felhasználói felületeket.
+              Fontos számomra, hogy teljes értékű terméket adjak ki a kezemből, így gyakran hozzátartozik a munkámhoz az arculati elemek korrigálása, újradefiniálása is. Emellett örülök akár a kifejezetten grafikai tervezést igénylő megkereséseknek is, ilyen volt többek között az Etele téri Barber Station számára készült teljes arculat kialakítása, megformázása.</p>
+            </div>
+          </div>
+      </div>
+
+
+
+    <footer class="container-fluid footer">
+        <p>copyright - peklimarton 2020</p>
+    </footer>
+<script>
+    function fontSize() {
+            document.getElementById("fontsizer").style.fontSize = "0.8em";
+          }
+          function fontSize2() {
+            document.getElementById("fontsizer").style.fontSize = "1em";
+          }
+          function fontSize3() {
+            document.getElementById("fontsizer").style.fontSize = "1.5em";
+          }
+</script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
